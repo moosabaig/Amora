@@ -67,11 +67,11 @@ def takeCommand():
             print(f"User said: {query}")
             return query
         except Exception as e:
-            return "Some Error Occurred. Sorry from Jarvis"
+            return "Some Error Occurred. Sorry from Amora"
 
 if __name__ == '__main__':
-    print('Welcome to Jarvis A.I')
-    say("Jarvis A.I")
+    print('Welcome to Amora')
+    say("Amora")
     while True:
         print("Listening...")
         query = takeCommand()
@@ -101,7 +101,7 @@ if __name__ == '__main__':
         elif "Using artificial intelligence".lower() in query.lower():
             ai(prompt=query)
 
-        elif "Jarvis Quit".lower() in query.lower():
+        elif "Amora Quit".lower() in query.lower():
             exit()
 
         elif "reset chat".lower() in query.lower():
